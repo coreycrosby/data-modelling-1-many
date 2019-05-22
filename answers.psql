@@ -1,0 +1,46 @@
+-- 1. /
+SELECT * FROM authors where name= 'Kara Melton';
+SELECT * FROM articles where author_id=8;
+
+-- 2. 
+
+SELECT * FROM provinces where name= 'Ontario';
+SELECT * FROM cities where province_id= 14;
+
+-- 3. 
+SELECT * FROM articles where title= 'Coding Bootcamps and Emotional Labor';
+SELECT name FROM authors where id= 4;
+
+-- 4.
+SELECT COUNT(id) AS number_of_provinces_in_Canada FROM provinces;
+
+-- 5.
+SELECT * FROM residences where address= '4740 McDermott Street';
+SELECT COUNT(id) AS number_of_people_that_live_at_this_address FROM persons where residence_id= 9;
+
+-- 6.
+SELECT * FROM residences where address= '4740 McDermott Street';
+SELECT name FROM cities where id= 11;
+
+-- 7. 
+SELECT * FROM residences where address= '4740 McDermott Street';
+SELECT * FROM cities where id= 11;
+SELECT name FROM provinces where id=14;
+
+-- 8.
+SELECT * FROM residences where address= '4740 McDermott Street';
+SELECT * FROM cities where id= 11;
+SELECT * FROM provinces where id=14;
+SELECT name FROM countries where id=1;
+
+-- 9.
+SELECT * FROM persons where name= 'Destini Davis';
+SELECT * FROM residences where id=2;
+SELECT * FROM cities where id= 8;
+SELECT * FROM provinces where id= 14;
+SELECT name FROM countries where id= 1;
+
+-- 10.
+SELECT * FROM authors where name= 'Aditya Mukerjee';
+SELECT * FROM articles where author_id= 2;
+SELECT COUNT(id) AS number_of_articles FROM articles where author_id= 2;
